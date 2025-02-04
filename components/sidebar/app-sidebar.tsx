@@ -47,28 +47,28 @@ import {
 } from "@/components/ui/alert-dialog"
 
 const mainNavItems = [
-  { title: "Launchpad", icon: Rocket, href: "/launchpad" },
-  { title: "Dashboard", icon: BarChart2, href: "/dashboard" },
-  { title: "Campaigns", icon: Megaphone, href: "/campaigns" },
+  { title: "Launchpad", icon: Rocket, href: "/Home/launchpad" },
+  { title: "Dashboard", icon: BarChart2, href: "/Home/dashboard" },
+  { title: "Campaigns", icon: Megaphone, href: "/Home/campaigns" },
 ]
 
 const salesItems = [
-  { title: "Sales Pipeline", icon: PieChart, href: "/sales-pipeline" },
-  { title: "Conversations", icon: MessageSquare, href: "/conversations" },
+  { title: "Sales Pipeline", icon: PieChart, href: "/Home/sales-pipeline" },
+  { title: "Conversations", icon: MessageSquare, href: "/Home/conversations" },
 ]
 
 const outreachChannels = [
-  { title: "AI Voice Agents", icon: Robot, href: "/ai-agents", hasSubmenu: true },
-  { title: "Email", icon: Mail, href: "/email" },
-  { title: "SMS", icon: MessageCircle, href: "/sms" },
+  { title: "AI Voice Agents", icon: Robot, href: "/Home/ai-agents", hasSubmenu: true },
+  { title: "Email", icon: Mail, href: "/Home/email" },
+  { title: "SMS", icon: MessageCircle, href: "/Home/sms" },
 ]
 
 const resources = [
-  { title: "Phone Numbers", icon: Phone, href: "/phone" },
+  { title: "Phone Numbers", icon: Phone, href: "/Home/phone" },
   {
     title: "Knowledge Base",
     icon: Book,
-    href: "/knowledge-base",
+    href: "/Home/knowledge-base",
     options: [
       { label: "Assign a Knowledge Base", icon: Users },
       { label: "Create a Knowledge Base using AI", icon: Wand2 },
@@ -78,12 +78,12 @@ const resources = [
 
 // Settings sub-items that will be shown in the settings page sidebar
 export const settingsNavItems = [
-  { title: "General Settings", icon: Settings, href: "/settings" },
-  { title: "White Label", icon: Building2, href: "/settings/white-label" },
-  { title: "Security", icon: Shield, href: "/settings/security" },
-  { title: "Integrations", icon: Webhook, href: "/settings/integrations" },
-  { title: "Help Center", icon: HelpCircle, href: "/help-center" },
-  { title: "Help Center Admin", icon: Settings, href: "/admin/help-center" },
+  { title: "General Settings", icon: Settings, href: "/Home/settings" },
+  { title: "White Label", icon: Building2, href: "/Home/settings/white-label" },
+  { title: "Security", icon: Shield, href: "/Home/settings/security" },
+  { title: "Integrations", icon: Webhook, href: "/Home/settings/integrations" },
+  { title: "Help Center", icon: HelpCircle, href: "/Home/help-center" },
+  { title: "Help Center Admin", icon: Settings, href: "/Home/admin/help-center" },
 ]
 
 export function AppSidebar() {
@@ -271,16 +271,16 @@ export function AppSidebar() {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Link
-                    href="/settings"
+                    href="/Home/settings"
                     className={cn(
                       "flex h-9 items-center rounded-lg px-3 text-sm font-medium text-white/60 hover:bg-white/5 hover:text-white transition-all",
-                      pathname.startsWith("/settings") && "bg-white/10 text-white",
+                      pathname.startsWith("/Home/settings") && "bg-white/10 text-white",
                       !isExpanded && "justify-center",
                     )}
                   >
                     <Settings className="h-5 w-5 flex-shrink-0" />
                     {isExpanded && <span className="ml-3">Settings</span>}
-                    {pathname.startsWith("/settings") && (
+                    {pathname.startsWith("/Home/settings") && (
                       <motion.div
                         layoutId="activeNav"
                         className="absolute left-0 h-full w-1 bg-white"

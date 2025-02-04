@@ -1234,5 +1234,7 @@ export const ColdCampaignDialog = ({ isOpen, onClose }: ColdCampaignDialogProps)
   )
 }
 
-export { ColdCampaignDialog }
+_c = ColdCampaignDialog;
+var _c;
+$RefreshReg$(_c, "ColdCampaignDialog");
 

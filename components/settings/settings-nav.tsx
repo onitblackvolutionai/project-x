@@ -12,17 +12,17 @@ const settingsNav = [
     items: [
       {
         title: "General Settings",
-        href: "/settings",
+        href: "/Home/settings",
         icon: Settings,
       },
       {
         title: "Appearance",
-        href: "/settings/appearance",
+        href: "/Home/settings/appearance",
         icon: Palette,
       },
       {
         title: "Notifications",
-        href: "/settings/notifications",
+        href: "/Home/settings/notifications",
         icon: Bell,
       },
     ],
@@ -32,12 +32,12 @@ const settingsNav = [
     items: [
       {
         title: "Members",
-        href: "/settings/team",
+        href: "/Home/settings/team",
         icon: Users,
       },
       {
         title: "Billing",
-        href: "/settings/billing",
+        href: "/Home/settings/billing",
         icon: CreditCard,
       },
     ],
@@ -47,7 +47,7 @@ const settingsNav = [
     items: [
       {
         title: "AI Agents",
-        href: "/settings/ai-agents",
+        href: "/Home/settings/ai-agents",
         icon: Bot,
       },
     ],
@@ -57,22 +57,22 @@ const settingsNav = [
     items: [
       {
         title: "White Label",
-        href: "/settings/white-label",
+        href: "/Home/settings/white-label",
         icon: Building2,
       },
       {
         title: "Security",
-        href: "/settings/security",
+        href: "/Home/settings/security",
         icon: Shield,
       },
       {
         title: "Integrations",
-        href: "/settings/integrations",
+        href: "/Home/settings/integrations",
         icon: Webhook,
       },
       {
         title: "Support",
-        href: "/settings/support",
+        href: "/Home/settings/support",
         icon: HelpCircle,
       },
     ],
